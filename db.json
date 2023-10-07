@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Buy Iphone 15 pro",
+      "day": "25th september",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Do Homeworks",
+      "day": "26th september",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Watch new movie",
+      "day": "27th september",
+      "reminder": true
+    }
+  ]
+}

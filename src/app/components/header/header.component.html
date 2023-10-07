@@ -1,0 +1,9 @@
+<header class="header">
+  <h1 class="header--title">Task Tracker</h1>
+  <app-button
+    *ngIf="hasRoute(['/'])"
+    (click)="toggle()"
+    [color]="showTaskForm ? 'red' : 'blue'"
+    >{{ showTaskForm ? "Close" : "Add Task" }}</app-button
+  >
+</header>

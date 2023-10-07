@@ -1,0 +1,35 @@
+<form class="task__form" (submit)="addTask()">
+  <input
+    class="input"
+    type="text"
+    placeholder="Task"
+    name="text"
+    [(ngModel)]="text"
+  />
+  <input
+    class="input"
+    type="text"
+    placeholder="Day"
+    name="day"
+    [(ngModel)]="day"
+  />
+  <div class="input__wrapper">
+    <label for="reminder">Reminder</label>
+    <input
+      class="checkbox"
+      type="checkbox"
+      id="reminder"
+      name="reminder"
+      [(ngModel)]="reminder"
+    />
+  </div>
+  <app-button>Save</app-button>
+</form>
+<div class="tasks">
+  <app-task-card
+    *ngFor="let task of tasks"
+    [task]="task"
+    (update)="updateTask(task)"
+    (delete)="deleteTask(task.id)"
+  ></app-task-card>
+</div>

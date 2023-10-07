@@ -1,0 +1,8 @@
+<div
+  [ngClass]="['task__card', task.reminder ? 'reminded' : '']"
+  (dblclick)="onUpdate()"
+>
+  <h3 class="task__card--text">{{ task.text }}</h3>
+  <h5 class="task__card--day">{{ task.day }}</h5>
+  <app-icon (click)="onDelete()" icon="delete" class="delete--icon"></app-icon>
+</div>
